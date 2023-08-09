@@ -10,7 +10,7 @@ git clone https://github.com/Siddhesh-3/githubcourse.git
 
  //to add in stage
 
- git add filename
+ git add filename or git add .
 
 git restore --stage test.txt
 
@@ -33,10 +33,44 @@ git checkout -B  branch2
 
  //to push to new branch
 
- git add
- 
+ git add . or git add filename
  git commit "changes"
- git push -u branchname
+ git push -u origin branchname
 
 
- //git pull conflicts
+//check pull request on github 
+
+create pull request
+comapre and merge request into main branch
+
+
+//**Remote Git clone'
+
+//create new folder outside main repo
+
+mkdir newfolder
+
+// go in main repo and copy remote
+
+cd mainrepo
+ git remote -v 
+
+//cd newfolder
+
+cd newfolder
+git init
+git remote add origin "remotelink"
+
+//to check remote
+git remote -v
+
+//to pull chnages in new local repo
+
+git pull
+
+// to switch to main branch and copy chnages to new
+
+git checkout main
+
+
+
