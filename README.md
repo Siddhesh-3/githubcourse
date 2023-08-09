@@ -34,5 +34,9 @@ git checkout -B  branch2
  //to push to new branch
 
  git add
+ 
  git commit "changes"
  git push -u branchname
+
+
+ //git pull conflicts
